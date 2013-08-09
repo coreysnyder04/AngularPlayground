@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="Library/paulkinzett-toolbar/jquery.toolbar.js"></script>
+	<script type="text/javascript" src="Library/angular.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="Library/paulkinzett-toolbar/jquery.toolbars.css"/>
+	<link rel="stylesheet" href="Library/paulkinzett-toolbar/bootstrap.icons.css"/>
+
+	<style type="text/css">
+		#format-toolbar{
+			width: 19px;
+			margin: 100px auto;
+		}
+	</style>
+
+</head>
+<body>
+
+	<!-- Click this to see a toolbar -->
+	<div style="margin: 0 auto; width: 300px;">
+		<div id="format-toolbar"">
+			<img src="http://paulkinzett.github.com/toolbar/img/icon-cog-small.png">
+		</div>
+	</div>
+
+
+	<!-- Our tooltip style toolbar -->
+	<div id="user-toolbar-options" style="display: none;">
+		<a href="#"><i class="icon-user"></i></a>
+		<a href="#"><i class="icon-star"></i></a>
+		<a href="#"><i class="icon-edit"></i></a>
+		<a href="#"><i class="icon-delete"></i></a>
+		<a href="#"><i class="icon-ban"></i></a>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+	$('#format-toolbar').toolbar({
+		content: '#user-toolbar-options',
+		position: 'top'
+	});
+
+</script>
+
+</html>
